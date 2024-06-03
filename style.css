@@ -1,0 +1,148 @@
+* {
+    margin: 0px;
+    text-align: center;
+}
+
+:root {
+    --main--color: #02010A;
+    --sec--color: #E2FDFF;
+    --tri--color: #04052E;
+    --qua--color: #140152;
+    --qui--color: #9BB1FF;
+    --sen--color: #5465FF;
+    --sep--color: #BFD7FF;
+    --oct--color: #22007C;
+}
+
+
+
+header {
+    background-color: var(--main--color);
+    color: var(--sec--color);
+    height: 20vh;
+    .logoTitle{
+        display: flex;
+        justify-content: center;
+        .shopLogo {
+            height: 100px;
+            &:last-child {
+                transform: scaleX(-1);
+            }
+        }
+        .main_div1 {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            padding: 15px;
+            h1 {
+                font-size: 2rem;
+            }
+        }
+    }
+    
+    ul {
+        list-style-type: none;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        a {
+            color: var(--sec--color);
+            text-decoration: none;
+            &:hover {
+                color: var(--sec--color);
+                text-shadow: 0 0 9px;
+            }
+        }
+    }
+}
+
+.alignment {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .form {
+        width: 15rem;
+        height: 15rem;
+        background-color: var(--oct--color);
+        background-image: linear-gradient(var(--oct--color), var(--sep--color));
+        border: 5px solid var(--tri--color);
+        box-shadow: 10px 10px 15px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.place{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .intro {
+        background: var(--qui--color);
+        height: 30rem;
+        width: 30rem;
+        border: 5px solid var(--sen--color);
+        box-shadow: 10px 10px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .chibiLogo {
+            height: 250px;
+            width: 250px;
+        }
+        p {
+            font-size: large;
+        }
+    }
+}
+
+
+.main_sec1 {
+    min-height: 100vh;
+    background-color: var(--qua--color);
+    background-image: linear-gradient(var(--qua--color),var(--qui--color));
+    .lineUp {
+        display: flex;
+        justify-content: space-evenly;
+        padding: 10px;
+        .prod {
+            height: 250px;
+            width: 250px;
+            background-color: var(--sep--color);
+            background-image: linear-gradient(var(--oct--color),var(--sep--color));
+            border: 3px solid var(--sec--color);
+            box-shadow: 10px 10px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}
+
+.fix {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .signUp {
+            background-color: var(--sep--color);
+            min-height: 500px;
+            min-width: 300px;
+            box-shadow: 10px 10px 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+
+footer {
+    background-color: var(--sen--color);
+}
+
+img {
+    height: 125px;
+    width: 125px;
+}
+
